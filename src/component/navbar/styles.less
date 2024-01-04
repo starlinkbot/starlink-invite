@@ -1,0 +1,40 @@
+@import "~@/assets/styles/variables.less";
+@import "~@/assets/styles/mixins.less";
+
+.m_navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  z-index: 999;
+  #flex > .row(center);
+
+  &_back {
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+    margin-left: 20px;
+  }
+  &_title {
+    font-size: 16px;
+    font-weight: @font_weight_strong;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &_title_light {
+    color: @content_inverse_primary_color;
+  }
+  &_title_dark {
+    color: @content_primary_color;
+  }
+}
+.m_navbar_light {
+  background-color: @background_primary_color;
+}
+.m_navbar_dark {
+  background-color: @primary_color;
+}

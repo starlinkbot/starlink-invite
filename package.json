@@ -1,0 +1,60 @@
+{
+  "name": "starlink-invite",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "dependencies": {
+    "antd-mobile": "^5.33.0",
+    "axios": "^0.21.4",
+    "bnc-notify": "^1.9.1",
+    "cra-template": "1.1.2",
+    "echarts": "^5.4.2",
+    "env-cmd": "^10.1.0",
+    "http-proxy-middleware": "^2.0.1",
+    "i18next": "^20.6.1",
+    "i18next-browser-languagedetector": "^6.1.2",
+    "less": "^3.12.2",
+    "less-loader": "^5.0.0",
+    "moment": "^2.29.1",
+    "normalize.css": "^8.0.1",
+    "qrcode.react": "^3.1.0",
+    "react": "^17.0.2",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.12.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "react-transition-group": "^4.4.5"
+  },
+  "scripts": {
+    "start": "PORT=1026 env-cmd -f .env.development react-app-rewired start",
+    "start:prod": "PORT=1027 env-cmd -f .env.production react-app-rewired start",
+    "build:dev": "env-cmd -f .env.development react-app-rewired build",
+    "build": "env-cmd -f .env.production react-app-rewired build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.3",
+    "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.8",
+    "web-vitals": "^2.1.0"
+  }
+}

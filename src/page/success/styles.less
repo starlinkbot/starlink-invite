@@ -1,0 +1,44 @@
+@import "~@/assets/styles/variables.less";
+@import "~@/assets/styles/mixins.less";
+
+.p_success {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 24px;
+  box-sizing: border-box;
+  #flex > .column(center);
+
+  &_logo {
+    width: 114px;
+    height: 32px;
+    margin-top: 16px;
+  }
+  &_title {
+    margin-top: 40px;
+    font-size: 32px;
+    color: @content_primary_color;
+    font-weight: @font_weight_strong;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+  &_subtitle {
+    margin-top: 16px;
+    font-size: 16px;
+    color: @content_primary_color;
+    line-height: 1.5;
+    text-align: center;
+    white-space: pre-wrap;
+  }
+  &_button {
+    margin-top: 48px;
+    width: 100%;
+    height: 56px;
+    border-radius: 16px;
+    font-size: 16px;
+    #button > .primary();
+  }
+  &_image {
+    margin-top: 36px;
+    width: 100vw;
+  }
+}

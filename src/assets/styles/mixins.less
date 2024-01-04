@@ -1,0 +1,54 @@
+@import "~@/assets/styles/variables.less";
+
+#flex {
+  .row(@align-items: flex-start, @justify-content: flex-start) {
+    display: flex;
+    flex-direction: row;
+    align-items: @align-items;
+    justify-content: @justify-content;
+  }
+  .column(@align-items: flex-start, @justify-content: flex-start) {
+    display: flex;
+    flex-direction: column;
+    align-items: @align-items;
+    justify-content: @justify-content;
+  }
+  .center() {
+    align-items: center;
+    justify-content: center;
+  }
+  .between() {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+#button {
+  .primary() {
+    background-color: @primary_color;
+    color: @content_inverse_primary_color;
+    font-weight: @font_weight_strong;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active::before {
+      border-radius: 16px;
+      border-style: none;
+    }
+  }
+  .normal() {
+    background-color: @background_tertiary_color;
+    color: @content_primary_color;
+    font-weight: @font_weight_strong;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active::before {
+      border-radius: 16px;
+      border-style: none;
+    }
+  }
+}
